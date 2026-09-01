@@ -40,6 +40,66 @@ MSProViS 是一个面向天然产物高分辨质谱数据的**本地化**数据�
 
 ---
 
+## 📸 界面预览 / Screenshots
+
+**登录页**：输入团队发放的账号与密码登录，或导入授权文件后登录。
+*Login page: sign in with the account and password issued by the team, or import your authorization file first.*
+
+<div align="center">
+  <img src="images/screenshot-01-login.png" alt="登录页 / Login page" width="85%"/>
+</div>
+
+**数据上传**：每个菌株上传三份 SIRIUS 输出文件（canopus / quantTable / structure），支持多菌株同时上传对比。
+*Data upload: upload the three SIRIUS output files per strain (canopus / quantTable / structure); multiple strains can be uploaded for comparison.*
+
+<div align="center">
+  <img src="images/screenshot-02-upload.png" alt="数据上传 / Data upload" width="85%"/>
+</div>
+
+**分类统计**：Diversity（化合物数量统计）与 Quantification（峰高总和定量）双饼图，固定颜色方案保证跨菌株视觉一致。
+*Classification statistics: Diversity (compound count) and Quantification (sum of peak heights) pie charts with a fixed color scheme for cross-strain consistency.*
+
+<div align="center">
+  <img src="images/screenshot-03-diversity.png" alt="分类统计 Diversity / Classification statistics" width="85%"/>
+</div>
+
+**定量分析**：各化合物分类的峰高总和占比（Quantification），与数量统计互为补充。
+*Quantification analysis: sum-of-peak-height share of each compound class, complementing the count statistics.*
+
+<div align="center">
+  <img src="images/screenshot-03-quantification.png" alt="定量分析 Quantification / Quantification analysis" width="85%"/>
+</div>
+
+**离子流图重建**：双 Y 轴离子色谱重建图——Peak Height 柱状（1st/2nd 双柱）与 Precursor mass 散点（点大小随峰高），支持按分类/亚类筛选。
+*Ion chromatogram reconstruction: dual-Y-axis chart with peak-height bars (1st/2nd) and precursor-mass scatter points (size scaled by peak height); filterable by class/subclass.*
+
+<div align="center">
+  <img src="images/screenshot-04-chromatogram.png" alt="离子流图重建 / Ion chromatogram reconstruction" width="85%"/>
+</div>
+
+**数据库匹配置信度**：Matched 散点按置信度连续着色（红→橙→绿），Unmatched 以空心点标注；点击弹窗查看化合物详情与分子结构图。
+*Database match confidence: matched points colored continuously by confidence (red→orange→green), unmatched as hollow points; click for compound details and structure image.*
+
+<div align="center">
+  <img src="images/screenshot-05-confidence.png" alt="数据库匹配置信度 / Database match confidence" width="85%"/>
+</div>
+
+**多菌株对比**：勾选对比模式后并排展示所有菌株的迷你饼图与统计表，量程全局统一。
+*Multi-strain comparison: enable compare mode for side-by-side mini pie charts and statistics with unified scales.*
+
+<div align="center">
+  <img src="images/screenshot-06-compare.png" alt="多菌株对比 / Multi-strain comparison" width="85%"/>
+</div>
+
+**目标分类碎片筛选**：三步流水线——准备母离子列表 → 上传 mzML → 运行碎片筛选，输出标准特征表。
+*Target fragment filtering: three-step pipeline — prepare precursor list → upload mzML → run fragment filtering, outputting a standardized feature table.*
+
+<div align="center">
+  <img src="images/screenshot-07-fragment-filter.png" alt="目标分类碎片筛选 / Target fragment filtering" width="85%"/>
+</div>
+
+---
+
 ## 系统要求 / System Requirements
 
 | 项目 / Item | 要求 / Requirement |
@@ -86,6 +146,14 @@ MSProViS 免费供学术研究使用，但**必须先申请账号**才能登录�
 
 > 账号由团队审核发放，请勿转借、出租或转让账号；忘记密码请联系团队重置。
 > *Accounts are issued after review by the team. Do not lend, rent or transfer your account. If you forget your password, please contact the team to reset it.*
+
+---
+
+## 🚀 快速体验 / Try It with Sample Data
+
+安装包**自带示例数据**（`sample_data/`），获得账号并登录后，无需准备自己的质谱数据即可立即体验完整分析流程：在数据上传区选择示例数据菌株卡片，一键上传三个示例文件 → 点击「开始处理并可视化」→ 浏览全部图表与分析结果。
+
+*The installer **ships with sample data** (`sample_data/`). After obtaining an account and signing in, you can experience the full workflow immediately without preparing your own MS data: select the sample strain card in the upload area, upload the three sample files in one click, click "Start Processing", and explore all charts and results.*
 
 ---
 
