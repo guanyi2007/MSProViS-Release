@@ -124,6 +124,9 @@ MSProViS 是一个面向天然产物高分辨质谱数据的**本地化**数据�
 - **启动**：安装完成后双击桌面或开始菜单中的 **MSProViS** 快捷方式启动软件，浏览器会自动打开 `http://localhost:8000`。
   *Launch: after installation, double-click the **MSProViS** shortcut on the desktop or in the Start menu, and your browser will open `http://localhost:8000` automatically.*
 
+- **安装目录附赠详细说明**：安装完成后，安装目录内附有一份完整的中文版使用说明（`README.md`），包含数据处理逻辑、使用边界、输入数据格式等更详细的内容，可在安装目录中随时查阅。
+  *Detailed guide included: after installation, a complete Chinese user guide (`README.md`) is included in the installation directory, covering data-processing logic, usage boundaries and input formats in more detail — feel free to consult it at any time.*
+
 ---
 
 ## 申请使用与账号获取 / How to Get Access
